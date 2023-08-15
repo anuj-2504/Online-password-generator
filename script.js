@@ -27,7 +27,7 @@ setIndicator("#ccc");
 function handleSlider() {
     inputSlider.value = passwordLength;
     lengthDisplay.innerText = passwordLength;
-    //or kuch bhi karna chahiye ? - HW
+
     const min = inputSlider.min;
     const max = inputSlider.max;
     inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "% 100%"
@@ -90,7 +90,7 @@ async function copyContent() {
     catch(e) {
         copyMsg.innerText = "Failed";
     }
-    //to make copy wala span visible
+
     copyMsg.classList.add("active");
 
     setTimeout( () => {
@@ -155,7 +155,7 @@ generateBtn.addEventListener('click', () => {
         handleSlider();
     }
 
-    // let's start the jouney to find new password
+
     console.log("Starting the Journey");
     //remove old password
     password = "";
